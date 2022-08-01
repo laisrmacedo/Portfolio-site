@@ -465,29 +465,33 @@ nav{
 
 #projetos{
     margin-top: 120px;
-    border: green solid 1px;
+    /* border: green solid 1px; */
     position: relative;
     /* display: flex; */
 }
 
 .container-projetos{
-    border: red solid 1px;
+    /* border: red solid 1px; */
     padding: 0 40px 40px 40px;
     display: flex;
     flex-flow: row wrap;
     justify-content: space-around;
-
+    background-image: url("pictures/logo-fundo.png");
+    background-size: contain;
 }
 
 .p1, .p2, .p3, .p4, .p5, .p6{
     /* border: blue solid 1px; */
-    width: 250px;
-    height: 150px;
-    margin-top: 40px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.123);
+    width: 270px;
+    height: 170px;
+    margin-top: 20px;
+    background-color: white;
+    /* filter: (0.4); */
+    border-radius: 20px;
 }
 
 .marcadagua{
-    transform: rotate(270deg);
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-weight: bolder;
     font-size: 80px;
@@ -496,6 +500,7 @@ nav{
 }
 
 .title-sobre-mim{
+    transform: rotate(270deg);
     color: rgba(255, 255, 255, 0.1);
     width: 60%;
     margin-left: 60%;
@@ -503,26 +508,61 @@ nav{
 
 .title-projetos{
     /* border: rgb(255, 192, 255) solid 2px; */
-    color: #eb6e6e23;
+    color: #eb6e6e11;
     z-index: 5;
-    position: absolute;
-    width: 70%;
-    margin-left: -32%;
-    /* display: flex;
-    justify-content: start; */
-    /* align-content: ; */
+    display: flex;
+    justify-content: center;
 }
-.p1, .p6{
-    background-color: #eb9e6e;
+
+
+/* .p1,.p6{
+    box-shadow: 0px 0px 5px 5px #eb9e6e79;
+    border: 1px solid #eb9e6e;
 }
 
 .p2, .p5{
-    background-color: #706f6b;
+    box-shadow: 5px 5px 0px #706f6b;
+    border: 1px solid #706f6b;
 }
 
 .p3, .p4{
-    background-color: #eb6e6e;
+    border: 1px solid #eb6e6e;
+} */
+
+.p1{
+    /* padding: 20px; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
 }
+
+.t1{
+    background-image: url("pictures/ecommece.png");
+    /* filter: opacity(0.9); */
+    /* border: red solid 1px; */
+    margin-top: 20px;
+    height: 60%;
+    width: 80%;
+    /* border-radius: 10px; */
+    /* background-color:#eb9e6e79; */
+    /* filter: contrast(0.2); */
+}
+
+.p1 p{
+    /* border: red solid 1px; */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bolder;
+    font-size: 14px;
+    color: #ffffff;
+    text-align: center;
+    width: 60%;
+    /* margin-left: -130px; */
+    /* justify-content: start; */
+    background-color: #eb9e6e;
+}
+
+
 
 /* footer{
     margin: 0px 100px;
