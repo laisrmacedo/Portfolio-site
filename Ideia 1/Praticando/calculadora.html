@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EXERCICIO</title>
+    <style>
+        body{
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            text-align: center;
+        }
+
+        .tabela{
+            margin-top: 50px;
+            display: inline-flex;        
+        }
+
+        .n1{
+            text-align: center;
+            width: 80px;
+        }
+
+        .n2{
+            text-align: center;
+            width: 80px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>PRATICANDO</h1>
+    </header>
+    <nav>
+        <h2>Receber dois valores e calcular</h2>
+        <p>Digite o primeiro número:</p>
+        <input type="number" class="n1">        
+        <p>Digite o segundo número:</p>
+        <input type="number" class="n2"></br></br>
+        <input type="button" value="CALCULAR" class="button2" onclick="ck()">
+    </nav>
+    <div class="tabela">
+        <table border="1">
+            <tr>
+                <td>OPERAÇAO</td>                
+                <td>RESULTADO</td>
+            </tr>
+            <tr>                
+                <td class="num"><p></p></td>
+                <td class="res1"></td>
+            </tr> 
+            <tr>
+                <td class="num"><p></p></td>
+                <td class="res2"></td>
+            </tr>
+            <tr>
+                <td class="num"><p></p></td>
+                <td class="res3"></td>
+            </tr> 
+            <tr>
+                <td class="num"><p></p></td>
+                <td class="res4"></td>
+            </tr> 
+            <tr>
+                <td class="num"><p></p></td>
+                <td class="res5"></td>
+            </tr>              
+        </table>
+    </div>
+    <!-- Link: http://docente.ifrn.edu.br/brunogurgel/disciplinas/2013/desweb/exercicios/lista3-javascript.pdf -->
+    <script>     
+        
+        function ck(){  
+            let n1 = document.querySelector('input.n1')
+            let num1 = Number(n1.value)
+
+            let n2 = document.querySelector('input.n2')        
+            let num2 = Number(n2.value)
+
+            let soma = num1 + num2
+            let res1 = document.getElementsByClassName('res1')[0]
+            res1.innerHTML = (soma)
+            let valor1 = document.getElementsByClassName('num')[0]   
+            valor1.innerHTML= (num1+ " + " +num2)          
+
+            let subt = num1 - num2
+            let res2 = document.getElementsByClassName('res2')[0]
+            res2.innerHTML = (subt)
+            let valor2 = document.getElementsByClassName('num')[1]    
+            valor2.innerHTML= (num1+ " - " +num2)
+
+            let mult = num1 * num2
+            let res3 = document.getElementsByClassName('res3')[0]
+            res3.innerHTML = (mult)
+            let valor3 = document.getElementsByClassName('num')[2]    
+            valor3.innerHTML= (num1+ " * " +num2)
+
+            let divi = num1 / num2
+            let res4 = document.getElementsByClassName('res4')[0]
+            res4.innerHTML = (divi)
+            let valor4 = document.getElementsByClassName('num')[3]    
+            valor4.innerHTML= (num1+ " / " +num2)
+
+            let resto = num1 % num2
+            let res5 = document.getElementsByClassName('res5')[0]
+            res5.innerHTML = (resto)
+            let valor5 = document.getElementsByClassName('num')[4]    
+            valor5.innerHTML= (num1+ " % " +num2)  
+
+                     
+        }
+    </script>
+</body>
+</html>

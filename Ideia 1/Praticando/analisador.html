@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio</title>
+    <style>
+        body{
+            background-color: rgb(63, 170, 202);
+            font: normal 15pt arial;
+        }
+
+        header{
+            color: white;
+            text-align: center;
+        }
+        
+        section{
+            background-color: white;
+            border-radius: 10px;
+            padding:20px;           
+            width: 420px;            
+            height: 370px;          
+            margin: auto;
+            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.411);
+            text-align: center;
+            font-size: 16px;
+        }
+        
+        footer{
+            color: white;
+            text-align: center;
+            font-style: italic;
+        }
+
+        #txtn{
+            width: 70px;
+            text-align: center;
+        }
+
+        .valores{
+            width: 200px;
+            height: 100px;
+            text-align: center;
+            margin-bottom: 15px;            
+        }
+
+        .res{
+            text-align: center;
+            margin-top: 20px;            
+            height: 100px;
+            padding: auto;                     
+        }      
+    </style>
+</head>
+<body>
+   <header>
+        <h2>ANALISADOR DE NÚMEROS</h2>
+    </header>
+    <section>
+        <P>Digite o número (entre 1 e 100): <input type="number" id="txtn">
+        <input type="button" value="ADICIONAR" onclick="adicionar()"></P>
+        <div class="caixa">
+            <select name="valores" class="valores" size="5"></select>
+        </div>
+            <input type="button" value="ANALISAR" onclick="analisar()">
+        <div class="res"></div>
+    </section>
+    <footer>
+        <p>&copy; Copy Right</p>
+    </footer>
+    <script>
+        let v1 = []
+        let res = document.querySelector('div.res')
+        
+        function adicionar(){
+            let txtn = document.getElementById('txtn')
+            let n = Number(txtn.value)
+            let tab = document.querySelector('select.valores')        
+            let i = v1.includes(n)
+            txtn.value = ''
+            txtn.focus()
+
+            if (n == 0 || n > 100 || n < 0){
+                window.alert('Adicione um número entre 1 e 100.')
+            } else if (i == false){                    
+                v1.push(n)
+                let item = document.createElement('option')
+                item.text = `Valor ${n} adicionado`
+                tab.appendChild(item)
+                res.innerHTML = ''
+            } else{
+                window.alert('Este número já foi adicionado.')
+            } 
+            console.log(v1)
+            return v1           
+        } 
+        
+        function analisar(){
+            let maior = v1[0]
+            let menor = v1[0]           
+            if(v1.length == 0){
+                res.innerHTML = 'Adicione valores'
+            } else {                                
+                /*Array.min = function(array){
+                    return Math.min.apply(Math, array)
+                }
+                Array.max = function(array){
+                    return Math.max.apply(Math, array)
+                }*/
+                for(let pos in v1){
+                    if(v1[pos] > maior)
+                        maior = v1[pos]
+                    if(v1[pos] < menor)
+                        menor = v1[pos]
+                }
+                let soma = 0
+                for(let pos in v1){
+                    soma += v1[pos]
+                }                       
+                res.innerHTML = `
+                <p> Ao todo temos ${v1.length} números cadastrados.</p> 
+                <p> O maior valor informado foi ${maior}. </p>
+                <p> O menor valor informado foi ${menor}. </p> 
+                <p> Somando todos os valores temos ${soma}.</p>
+                <p> A média dos valores digitados é ${(soma/v1.length).toFixed(1)}.</p>`
+            }
+        }
+    </script>
+</body>
+</html>
