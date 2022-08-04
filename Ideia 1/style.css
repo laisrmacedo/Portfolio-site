@@ -352,6 +352,7 @@ nav{
     display: flex;
     align-items: center;
     font-weight: bold;
+    /* border: red solid 1px; */
 }
 
 .p1{
@@ -365,49 +366,98 @@ nav{
     font-size: 20%;
     width: 35%;
     justify-content: end;
+}
+.p2 a{
+    text-decoration: none;
     color: #eb9e6e;
+}
+.p2 a:hover{
+    font-size: 102%;
+    transition: font-size 0.1s;
 }
 
 .p3{
     font-size: 35%;
     width: 20%;
     justify-content: center;
+}
+.p3 a{
+    text-decoration: none;
     color: #706f6b;
+}
+.p3 a:hover{
+    font-size: 102%;
+    transition: font-size 0.1s;
 }
 
 .p4{
     font-size: 20%;
     width: 35%;
     justify-content: start;
+}
+.p4 a{
+    text-decoration: none;
     color: #eb6e6e;
+}
+.p4 a:hover{
+    font-size: 102%;
+    transition: font-size 0.2s;
 }
 
 .p5{
     font-size: 20%;
     width: 20%;
     justify-content: end;
-    color: #706f6b;
+}
+.p5 a{
+    text-decoration: none;
+    color: #eb6e6e;
+}
+.p5 a:hover{
+    font-size: 102%;
+    transition: font-size 0.2s;
 }
 
 .p6{
     font-size: 35%;
     width: 20%;
     justify-content: center;
+}
+.p6 a{
+    text-decoration: none;
     color: #eb9e6e;
+}
+.p6 a:hover{
+    font-size: 102%;
+    transition: font-size 0.2s;
 }
 
 .p7{
     font-size: 28%;
     width: 20%;
     justify-content: center;
+}
+.p7 a{
+    text-decoration: none;
     color: #e0d3b8;
+}
+.p7 a:hover{
+    font-size: 102%;
+    transition: font-size 0.2s;
 }
 
 .p8{
     font-size: 20%;
     width: 20%;
     justify-content: start;
+}
+.p8 a{
+    text-decoration: none;
     color: #eb9e6e;
+}
+.p8 a:hover{
+    font-size: 102%;
+    transition: font-size 0.2s;
 }
 
 .p9{
@@ -436,6 +486,7 @@ nav{
     width: 35%;
     justify-content: end;
     color: #eb9e6e;
+    
 }
 
 .p13{
