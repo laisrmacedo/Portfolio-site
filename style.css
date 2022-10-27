@@ -93,7 +93,7 @@ nav{
     margin: 0px auto;
     width: 85%;
     max-width: 980px;
-    height: 2250px;
+    height: 2400px;
     padding-top: 120px;
 
 }
@@ -329,7 +329,8 @@ nav{
 .projeto{
     margin: 0 70px;
     display: flex;
-    justify-content: start;
+    /* justify-content: start; */
+    flex-direction: row;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: #706f6b;
 }
@@ -790,6 +791,9 @@ footer{
         background-size: cover;
         height: 400px;
     }
+    nav{
+        height: 2600px;
+    }
     .home1{
         font-size: 12px;
     }
@@ -832,7 +836,9 @@ footer{
     nav{
         padding-top: 0px;
         margin: 0px;
+        height: 3450px;
     }
+
     #inicio{
         margin: 0px;
     }
@@ -909,7 +915,35 @@ footer{
     }
     .email p{
         width: 110%;
+    }
 
+    .projeto{
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .img-projeto{
+        display: flex;
+        justify-content: center;
+    }
+
+    .info-projeto{
+        padding: 0;
+    }
+
+    .info-projeto h3{
+        padding: 0;
+        text-align: center;
+    }
+
+    .box-dados{
+        flex-direction: column;
+        padding: 0;
+        gap: 10px;
+    }
+
+    .descricao{
+        padding: 0;
     }
 
     .p1, .p2, .p3, .p4, .p5, .p6, .p7, .p8, .p9, .p10, .p11, .p12, .p13, .p14, .p15{
@@ -935,9 +969,5 @@ footer{
 
     .box{
         margin: 0 30px 0 30px;
-    }
-
-    nav{
-        height: 2700px;
     }
 }
