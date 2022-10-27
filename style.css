@@ -6,8 +6,6 @@ body{
     align-items: center;
 }
 
-
-
 header{
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.123);
     display: flex;
@@ -321,11 +319,86 @@ nav{
 }
 
 #projetos{
-    padding-top: 160px;
+    padding-top: 100px;
     position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
 }
 
-.container-projetos{
+.projeto{
+    margin: 0 70px;
+    display: flex;
+    justify-content: start;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #706f6b;
+}
+
+.img-projeto{
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.123);
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    height: 100px; 
+}
+
+.img-projeto:hover{
+    filter: contrast(0.7);
+    transition: filter 0.5s;
+}
+
+.img-projeto img{
+    /* object-fit: cover; */
+    height: 100px;
+}
+
+.info-projeto{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.info-projeto h3 {
+    /* border: #706f6b 1px solid; */
+    padding-left: 20px;
+    margin: 0;
+}
+
+.box-dados{
+    display: flex;
+    flex-direction: row;
+    padding-left: 20px;
+}
+
+.descricao{
+    text-align: justify;
+    padding-right: 20px;
+}
+
+.botoes-projetos{
+    display: flex;
+    /* justify-content: center; */
+    padding-top: 5px;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.botoes-projetos button{
+    width: 100%;
+    height: 25px;
+    background-color: #eb9e6e;
+    border: none;
+    border-radius: 5px;
+    color: #ffffff;
+    font-size: 12px;
+}
+
+.botoes-projetos button:hover{
+    background-color:#8b8a86;
+    transition: background-color 0.5s;
+}
+
+.container-exercicios{
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
@@ -339,7 +412,7 @@ nav{
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 150px 0px;
+    padding: 120px 0px;
     border: #706f6b solid 2px;
     margin: 0px 40px;
     /* background-color: #ffffff; */
@@ -683,7 +756,7 @@ footer{
     }
     
     #inicio{
-        background-image: url("sticker2-768.png");
+        background-image: url("./Folder/pictures/sticker-768px.png");
         background-size: cover;
         height: 500px;
     }
@@ -713,7 +786,7 @@ footer{
 
 @media screen and (max-width:768px) {
     #inicio{
-        background-image: url("sticker425.png");
+        background-image: url("./Folder/pictures/sticker-425px.png");
         background-size: cover;
         height: 400px;
     }
