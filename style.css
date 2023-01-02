@@ -93,7 +93,7 @@ main{
     margin: 0px auto;
     width: 85%;
     max-width: 980px;
-    height: 2400px;
+    height: 2650px;
     padding-top: 120px;
 
 }
@@ -766,6 +766,10 @@ footer{
     .sticker, .texto-terminal{
         display: none;
     }
+
+    main{
+        height: 2950px;
+    }
     
     #inicio{
         background-image: url("./Folder/pictures/sticker-768px.png");
@@ -802,8 +806,8 @@ footer{
         background-size: cover;
         height: 400px;
     }
-    nav{
-        height: 2600px;
+    main{
+        height: 3000px;
     }
     .home1{
         font-size: 12px;
@@ -844,10 +848,10 @@ footer{
     header{
         display: none;
     } 
-    nav{
+    main{
         padding-top: 0px;
         margin: 0px;
-        height: 3450px;
+        height: 4000px;
     }
 
     #inicio{
