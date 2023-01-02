@@ -87,7 +87,7 @@ h1, h2, p{
     color: #eb9e6e;
 }
 
-nav{
+main{
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.123);
     background-color: white;
     margin: 0px auto;
@@ -118,7 +118,13 @@ nav{
 
 .home2{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: #eb9e6e;
+    /* color: #eb9e6e; */
+    background-image: linear-gradient(to right, #eb6e6e 5%, #eb9e6e 15%);
+  /* agora colocamos o fundo gradiente dentro do texto com essa propriedade */
+  background-clip: text;
+  -webkit-background-clip: text;
+  /* a cor do texto deve estar como transparent */
+  color: transparent;
     font-size: 32px;
 }
 
@@ -392,11 +398,12 @@ nav{
     border-radius: 5px;
     color: #ffffff;
     font-size: 12px;
+    cursor: pointer;
 }
 
 .botoes-projetos button:hover{
     background-color:#8b8a86;
-    transition: background-color 0.5s;
+    transition: background-color 0.5s ease-in-out;
 }
 
 .container-exercicios{
