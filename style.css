@@ -382,6 +382,10 @@ main{
     padding-right: 20px;
 }
 
+.descricao > p{
+    font-size: 14px;
+}
+
 .botoes-projetos{
     display: flex;
     /* justify-content: center; */
